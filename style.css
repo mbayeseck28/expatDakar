@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    padding: 1em 2.5%; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+}
+.nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+    gap: 2.5%;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 100%;
+}
+form{
+    width: 55%;
+    display: flex;
+}
+form a{
+    background-color: black;
+    color: #fff;
+    width: 5%;
+    display: flex;
+    padding: 0.5em 2.5%;
+    border-radius: 0 5px 5px 0;
+}
+form a i{
+    margin: auto;
+}
+input{
+    padding: 0.5em 5%;
+    width: 95%;
+    background-color: gainsboro;
+    border: 0.1px solid black;
+    border-radius: 5px 0 0 5px;
+}
+.bouton{
+    padding: 0.5em 5%;
+    background-color: orange;
+    color: #fff;
+    display: flex;
+    border-radius: 5px;
+}
+.bouton a{
+    margin: auto;
+    color: #fff;
+}
+.conIns{
+    margin: auto;
+}
+.conIns a{
+    color: black;
+} 
+/* ________________________________ */
+.categories{
+    background-color: gainsboro;
+    padding: 2em;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    width: 100%;
+    gap: 1em;
+}
+.prix{
+    display: flex;
+    justify-content: space-between;
+}
+h2, h4{
+    text-align: center;
+}
+h2{
+    margin-bottom: 1em;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    width: 49.3%;
+    gap: 1em;
+}
+.contenu{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    padding: 1em;
+}
+.contenu a{
+    margin-top: 1em;
+    color: orange;
+    font-weight: bold;
+}
+.prix p{
+    margin-top: 1em;
+    background-color: gainsboro;
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.contenu p{
+    color: black ;
+    opacity: 0.8;
+}
+.orange{
+    background-color: orange;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin: auto;
+    margin-top: -32px;
+    border-radius: 50%;
+}
+.orange i{
+    margin: auto;
+    color: #fff;
+}
+/* ____________________________ */
+.haut{
+    background-color: #112e46;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.h{
+    display: flex;
+    justify-content: space-around;
+} 
+.b{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-left: 2em;
+    width: 25%;
+}
+.roam{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.h a, .h p, .b a, .b p{
+    color: #fff;
+}  
+.h i{
+    font-size: 30px;
+    color: #fff;
+}
+ul, .rest{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+li{
+    list-style: none;
+}
+li a{
+    color: black;
+}
+.rest a{
+    display: flex;
+    justify-content: center;    
+    padding: 1em;
+}
+.rest a img{
+    width: 60%;
+    
+}
+.resSoc{
+    display: flex;
+    justify-content: space-around;
+}
+.bas{
+    background-color: black;
+    padding: 1em;
+}
+.bas p{
+    color: #fff;
+}
+.soulign{
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+/* ______________________________________ */
+
+@media screen AND (max-width: 767px) {
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    P{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    /* __________________ */
+    nav, .nav{
+        flex-direction: column;
+        width: 100%;
+        gap: 1em    ;
+    }
+    .logo, form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+
+    }
+    .categories{
+        padding: 1em;
+    }
+    .h, .b{
+        flex-direction: column;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .rest a img{
+        width: 100px;
+    }
+    .resSoc{
+        justify-content: flex-start;
+        gap: 1em;
+    }
+    .bas p{
+        text-align: center;
+    }
+    
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenu{
+        margin-bottom: 1em;
+    }
+    .contain{
+        width: 100%;
+    }
+    .bouton{
+        width: 35%;
+        margin: auto;
+    }
+    .rest a{
+        display: flex;
+        justify-content: start;
+    }
+    .soulign{
+        width: 50%;
+    }
+}
+@media screen AND (max-width: 500px) {
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    P{
+        font-size: 13px;
+        line-height: 24px;
+    }
+    /* __________________ */
+    .contain{
+        flex-direction: column;
+    }
+    .contenu{
+        width: 90%;
+    }
+    
+}
